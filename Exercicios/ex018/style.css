@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to right, pink, rgb(212, 125, 140));
+    font: normal normal 1.1em arial, sans-serif;
+}
+
+h1{
+    color: rgb(1, 1, 137);
+    text-align: left;
+}
+h1#main{
+    text-align: center;
+    color: rgb(133, 74, 1);
+}
+
+h2{
+    color: darkmagenta;
+}
+.cabelo{
+    color: blueviolet;
+}
+.unhas{
+    font-style: italic;
+    font-weight: lighter;
+}
+
+p{
+    font-size: 0.9em;
+}
