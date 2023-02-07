@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'amellia';
+    src: url(font/Amellia.ttf) format(truetype);
+};
+@font-face {
+    font-family: 'nalieta';
+    src: url(font/Nalieta_dafont.otf) format(opentype);
+}
+
+:root{
+
+    --title-font: "amellia", sans-serif;
+    --text-font:"nalieta", sans-serif;
+
+    --cor1: #F2E0D5;
+    --cor2: #D9B18F;
+    --cor3: #F29C50;
+    --cor4: #734A32;
+}
+
+*{
+   padding: 0px;
+   margin: 0px; 
+}
+
+body{
+    background-color: var(--cor1);
+    font-family: var(--text-font);
+    font-size: 1.1em;
+}
+header{
+    text-align: center;
+    background-color: #734A32;
+    color: white;
+    padding: 20px 0px 20px 0px;
+    margin-bottom: 20px;
+}
+header h1{
+    font-family: var(--title-font);
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+header p{
+    margin-bottom: 20px;
+}
+header a{
+    color: var(--cor3);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+header a:hover{
+    background-color: var(--cor1);
+    color: var(--cor4);
+    transition-duration: 0.5s;
+
+}
+
+main{
+    padding: 10px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+}
+main h1{
+    font-family: var(--title-font);
+    font-size: 2.5em;
+    color: var(--cor4);
+}
+main p{
+    text-align: justify;
+    text-indent: 30px;
+    margin: 15px 0px;
+    line-height: 1.5em;
+    padding-bottom: 20px;
+}
+main h2{
+    font-family: var(--title-font);
+    font-size: 2em;
+    color: var(--cor4);
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+
+main img{
+    width: 60%;
+       
+}
+main img.small{
+    max-width: 250px;
+    margin: auto;
+    display: block;
+}
+div.video{
+    background-color: var(--cor4);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+aside h3{
+    font-family: var(--title-font);
+    font-size: 1.7em;
+    color: var(--cor2);
+    padding: 5px;
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    border-radius: 8px;
+    margin: 15px;
+}
+aside ul{
+    padding-left: 30px;
+    list-style-position: inside;
+}
+aside li{
+    line-height: 1.5em;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--cor4);
+    color: var(--cor1);
+    font-weight: normal;
+    margin-top: 60px;
+}
+footer a{
+    text-decoration: none;
+    color: var(--cor3);
+}
