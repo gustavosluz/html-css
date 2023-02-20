@@ -11,6 +11,7 @@
             border-collapse: collapse;
             text-align: center;
             width: 500px;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
@@ -18,6 +19,19 @@
         }
         .unidade{
             font-weight: bold;
+            }
+        thead{
+            background-color: rgb(61, 61, 61);
+            color: aliceblue;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -0.5px;
+            background-color: rgb(61, 61, 61);
+
+        }
+        tbody > tr:nth-child(2n-1){
+            background-color: rgb(250, 178, 152);
         }
 
     </style>
@@ -29,14 +43,197 @@
     <table>
         <thead>
             <tr>
-                <th>Indredientes</th>
-                <th>UM</th>
-                <th><sup>1</sup>/<sub>2</sub> receita</th>
-                <th>1 receita</th>
-                <th>2 receitas</th>
+                <th scope="col">Indredientes</th>
+                <th scope="col">U.M.</th>
+                <th scope="col"><sup>1</sup>/<sub>2</sub> receita</th>
+                <th scope="col" style="width: 70px;">1 receita</th>
+                <th scope="col">2 receitas</th>
             </tr>
         </thead>
         <tr>
+            <td>Cenoura</td>
+            <td class="unidade">gr</td>
+            <td>200</td>
+            <td>400</td>
+            <td>800</td>
+        </tr>
+        <tr>
+            <td>Ovos</td>
+            <td class="unidade" rowspan="2">un</td>
+            <td>2</td>
+            <td>4</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Ovos</td>
+            
+            <td>75</td>
+            <td>150</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>Cenoura</td>
+            <td class="unidade">gr</td>
+            <td>200</td>
+            <td>400</td>
+            <td>800</td>
+        </tr>
+        <tr>
+            <td>Ovos</td>
+            <td class="unidade">un</td>
+            <td>2</td>
+            <td>4</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Óleo</td>
+            <td class="unidade">ml</td>
+            <td>75</td>
+            <td>150</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>Cenoura</td>
+            <td class="unidade">gr</td>
+            <td>200</td>
+            <td>400</td>
+            <td>800</td>
+        </tr>
+        <tr>
+            <td>Ovos</td>
+            <td class="unidade">un</td>
+            <td>2</td>
+            <td>4</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Óleo</td>
+            <td class="unidade">ml</td>
+            <td>75</td>
+            <td>150</td>
+            <td>300</td>
+        </tr><tr>
+            <td>Cenoura</td>
+            <td class="unidade">gr</td>
+            <td>200</td>
+            <td>400</td>
+            <td>800</td>
+        </tr>
+        <tr>
+            <td>Ovos</td>
+            <td class="unidade">un</td>
+            <td>2</td>
+            <td>4</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Óleo</td>
+            <td class="unidade">ml</td>
+            <td>75</td>
+            <td>150</td>
+            <td>300</td>
+        </tr><tr>
+            <td>Cenoura</td>
+            <td class="unidade">gr</td>
+            <td>200</td>
+            <td>400</td>
+            <td>800</td>
+        </tr>
+        <tr>
+            <td>Ovos</td>
+            <td class="unidade">un</td>
+            <td>2</td>
+            <td>4</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Óleo</td>
+            <td class="unidade">ml</td>
+            <td>75</td>
+            <td>150</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>Cenoura</td>
+            <td class="unidade">gr</td>
+            <td>200</td>
+            <td>400</td>
+            <td>800</td>
+        </tr>
+        <tr>
+            <td>Ovos</td>
+            <td class="unidade">un</td>
+            <td>2</td>
+            <td>4</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Óleo</td>
+            <td class="unidade">ml</td>
+            <td>75</td>
+            <td>150</td>
+            <td>300</td>
+        </tr><tr>
+            <td>Cenoura</td>
+            <td class="unidade">gr</td>
+            <td>200</td>
+            <td>400</td>
+            <td>800</td>
+        </tr>
+        <tr>
+            <td>Ovos</td>
+            <td class="unidade">un</td>
+            <td>2</td>
+            <td>4</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Óleo</td>
+            <td class="unidade">ml</td>
+            <td>75</td>
+            <td>150</td>
+            <td>300</td>
+        </tr><tr>
+            <td>Cenoura</td>
+            <td class="unidade">gr</td>
+            <td>200</td>
+            <td>400</td>
+            <td>800</td>
+        </tr>
+        <tr>
+            <td>Ovos</td>
+            <td class="unidade">un</td>
+            <td>2</td>
+            <td>4</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Óleo</td>
+            <td class="unidade">ml</td>
+            <td>75</td>
+            <td>150</td>
+            <td>300</td>
+        </tr><tr>
+            <td>Cenoura</td>
+            <td class="unidade">gr</td>
+            <td>200</td>
+            <td>400</td>
+            <td>800</td>
+        </tr>
+        <tr>
+            <td>Ovos</td>
+            <td class="unidade">un</td>
+            <td>2</td>
+            <td>4</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Óleo</td>
+            <td class="unidade">ml</td>
+            <td>75</td>
+            <td>150</td>
+            <td>300</td>
+        </tr><tr>
             <td>Cenoura</td>
             <td class="unidade">gr</td>
             <td>200</td>
@@ -60,6 +257,10 @@
         
 
     </table>
-    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia non quod iste nihil similique aliquam quo excepturi nostrum voluptas, eos nesciunt minima consectetur natus sunt consequatur fuga explicabo ea vero? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptatem eum cumque excepturi est dolorem incidunt ab delectus, voluptates optio sed voluptate a totam. Libero sed iure at iste asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis vel optio mollitia molestiae blanditiis reprehenderit omnis harum ullam. Repudiandae minus non sint deleniti nostrum quaerat distinctio aut, voluptatibus praesentium animi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat debitis accusamus exercitationem officiis. Optio sint, illo doloribus hic perferendis eius laudantium. Error nihil labore omnis sit exercitationem veritatis voluptas at?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia non quod iste nihil similique aliquam quo excepturi nostrum voluptas, eos nesciunt minima consectetur natus sunt consequatur fuga explicabo ea vero? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptatem eum cumque excepturi est dolorem incidunt ab delectus, voluptates optio sed voluptate a totam. Libero sed iure at iste asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis vel optio mollitia molestiae blanditiis reprehenderit omnis harum ullam. Repudiandae minus non sint deleniti nostrum quaerat distinctio aut, voluptatibus praesentium animi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat debitis accusamus exercitationem officiis. Optio sint, illo doloribus hic perferendis eius laudantium. Error nihil labore omnis sit exercitationem veritatis voluptas at?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia non quod iste nihil similique aliquam quo excepturi nostrum voluptas, eos nesciunt minima consectetur natus sunt consequatur fuga explicabo ea vero? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptatem eum cumque excepturi est dolorem incidunt ab delectus, voluptates optio sed voluptate a totam. Libero sed iure at iste asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis vel optio mollitia molestiae blanditiis reprehenderit omnis harum ullam. Repudiandae minus non sint deleniti nostrum quaerat distinctio aut, voluptatibus praesentium animi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat debitis accusamus exercitationem officiis. Optio sint, illo doloribus hic perferendis eius laudantium. Error nihil labore omnis sit exercitationem veritatis voluptas at?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia non quod iste nihil similique aliquam quo excepturi nostrum voluptas, eos nesciunt minima consectetur natus sunt consequatur fuga explicabo ea vero? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptatem eum cumque excepturi est dolorem incidunt ab delectus, voluptates optio sed voluptate a totam. Libero sed iure at iste asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis vel optio mollitia molestiae blanditiis reprehenderit omnis harum ullam. Repudiandae minus non sint deleniti nostrum quaerat distinctio aut, voluptatibus praesentium animi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat debitis accusamus exercitationem officiis. Optio sint, illo doloribus hic perferendis eius laudantium. Error nihil labore omnis sit exercitationem veritatis voluptas at?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia non quod iste nihil similique aliquam quo excepturi nostrum voluptas, eos nesciunt minima consectetur natus sunt consequatur fuga explicabo ea vero? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptatem eum cumque excepturi est dolorem incidunt ab delectus, voluptates optio sed voluptate a totam. Libero sed iure at iste asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis vel optio mollitia molestiae blanditiis reprehenderit omnis harum ullam. Repudiandae minus non sint deleniti nostrum quaerat distinctio aut, voluptatibus praesentium animi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat debitis accusamus exercitationem officiis. Optio sint, illo doloribus hic perferendis eius laudantium. Error nihil labore omnis sit exercitationem veritatis voluptas at?</p>
 </body>
 </html>
